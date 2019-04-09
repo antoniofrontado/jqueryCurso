@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>Jquery Tutorial practicas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <p>Lista 1</p>
+    <ul>
+        <li>Rojo</li>
+        <li>Azul</li>
+        <li>Verde</li>
+    </ul>
+
+    <p>Lista 1</p>
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+    <button>Click</button>
+   <script type= "text/javascript">
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("ul li:first-child").hide();
+        });
+    });
+    </script>
+</body>
+</html>

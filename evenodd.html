@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>Jquery Tutorial practicas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <table border="1">
+        <tr>
+            <td> Mario </td>
+            <td> 30 </td>
+        </tr>
+        <tr>
+            <td> Antonio </td>
+            <td> 36 </td>
+        </tr>
+        <tr>
+            <td> Juan </td>
+            <td> 25 </td>
+        </tr>
+        <tr>
+            <td> Marcos </td>
+            <td> 40 </td>
+        </tr>
+    </table>
+   <script type= "text/javascript">
+    $(document).ready(function(){
+        $("tr:even").css("background-color","red");
+        $("tr:even").css("color","blue");
+        $("tr:odd").css("background-color","blue");
+        $("tr:odd").css("color","red");
+        
+    });
+    </script>
+</body>
+</html>

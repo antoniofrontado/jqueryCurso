@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>Jquery Tutorial practicas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <p id="texto1">Programacion</p>
+    <p id="texto2">codigo</p>
+</br>
+    <button id="boton1">Cambiar text</button>
+    <button id="boton2">Cambiar Html</button>
+   <script type= "text/javascript">
+    $(document).ready(function(){
+        $("#boton1").click(function(){
+            $("#texto1").text("<b> Hola mundo!</b>");
+        });
+        $("#boton2").click(function(){
+            $("#texto2").html("<b> tutoriales del mundo!</b>");
+        });
+    });
+    </script>
+</body>
+</html>

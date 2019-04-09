@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>Jquery Tutorial practicas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <button>click</button>
+    <div id="texto1">Texto 1</div>
+    <div id="texto2">Texto 2</div>
+    <div id="texto3">Texto 3</div>
+    <div id="texto4">Texto 4</div>
+    <input type="text"id="espacio">
+    <input type="submit" id="enviar" value="enviar">
+    <script type= "text/javascript">
+    
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#texto2").hide();
+        });
+    $("#enviar").click(function(){
+     var x = $("#espacio").val();
+     alert(x);
+    });
+    
+    });
+    </script>
+</body>
+</html>
